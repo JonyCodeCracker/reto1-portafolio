@@ -4,161 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mascotas - Gatitos</title>
-    <link rel="stylesheet" href="index.css">
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            background-color: #fff;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid #8E24AA;
-        }
-        section h2 {
-            font-size: 28px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            color: #8E24AA;
-        }
-        section p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .gallery img {
-            width: calc(25% - 20px);
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        form input, form textarea, form button {
-            margin-bottom: 15px;
-            padding: 15px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form input:focus, form textarea:focus {
-            border-color: #8E24AA;
-            box-shadow: 0 0 5px rgba(142, 36, 170, 0.5);
-            outline: none;
-        }
-        form textarea {
-            resize: vertical;
-            height: 150px;
-        }
-        form button {
-            background-color: #8E24AA;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        form button:hover {
-            background-color: #6A1B9A;
-        }
-        .icon-container {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .icon-container i {
-            font-size: 24px;
-            color: #8E24AA;
-        }
-        .gif-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            height: 300px;
-            overflow-y: scroll;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .gif-gallery img {
-            width: calc(33% - 10px);
-            border-radius: 8px;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-            .gallery img, .gif-gallery img {
-                width: calc(50% - 10px);
-            }
-        }
-        @media (max-width: 480px) {
-            .gallery img, .gif-gallery img {
-                width: 100%;
-            }
-            section h2 {
-                font-size: 24px;
-            }
-            form input, form textarea, form button {
-                font-size: 14px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -193,12 +39,15 @@
             <h2>Servicios para Gatitos</h2>
             <p>Ofrecemos una amplia gama de servicios para satisfacer todas las necesidades de tus gatitos, desde cuidados médicos hasta juguetes divertidos.</p>
             <div class="icon-container">
-                <i class="fas fa-cat"></i>
-                <i class="fas fa-paw"></i>
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-toilet"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#8E24AA" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#8E24AA" viewBox="0 0 24 24">
+                    <path d="M12 2C8.134 2 5 5.134 5 9c0 4.5 7 13 7 13s7-8.5 7-13c0-3.866-3.134-7-7-7zm0 11c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"/>
+                </svg>
             </div>
         </section>
+        
 
         <section>
             <h2>Contáctanos</h2>
@@ -212,12 +61,12 @@
         </section>
 
         <section class="gif-gallery">
-            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Gatito GIF 1" width="100" height="400">
-            <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Gatito GIF 2" width="100" height="400">
-            <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Gatito GIF 3" width="100" height="400">
-            <img src="https://media.giphy.com/media/lJNoBCvQYp7nq/giphy.gif" alt="Gatito GIF 4" width="100" height="400">
-            <img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif" alt="Gatito GIF 5" width="100" height="400">
-            <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="Gatito GIF 6" width="100" height="400">
+            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Gatito GIF 1" width="200" height="300">
+            <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Gatito GIF 2" width="200" height="300">
+            <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Gatito GIF 3" width="200" height="300">
+            <img src="https://media.giphy.com/media/lJNoBCvQYp7nq/giphy.gif" alt="Gatito GIF 4" width="200" height="300">
+            <img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif" alt="Gatito GIF 5" width="200" height="300">
+            <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="Gatito GIF 6" width="200" height="300">
         </section>
     </main>
 
@@ -225,11 +74,6 @@
         <p>&copy; 2024 Gatitos Encantadores</p>
         <p>Todos los derechos reservados.</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log("Document loaded");
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
